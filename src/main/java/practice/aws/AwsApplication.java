@@ -10,16 +10,12 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import javax.persistence.EntityManager;
 
 @SpringBootApplication
-@EnableJpaAuditing
+//@EnableJpaAuditing
 public class AwsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AwsApplication.class, args);
 	}
 
-	@Bean
-	public JPAQueryFactory queryFactory(EntityManager em) {
-		return new JPAQueryFactory(em);
-	}
 
 }
